@@ -1,0 +1,14 @@
+{
+  "name": "refactoring-react-legacy-code-api",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Bruno Nardini",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
+}

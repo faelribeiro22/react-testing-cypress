@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript para iniciantes",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis eros ut feugiat facilisis.",
+    "image": "js.png",
+    "status": "ACTIVE"
+  },
+  {
+    "id": 2,
+    "name": "React.js Profissional",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis eros ut feugiat facilisis.",
+    "image": "reactjs.png",
+    "status": "ACTIVE",
+    "price": 520
+  },
+  {
+    "id": 3,
+    "name": "Node.js Profissional",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis eros ut feugiat facilisis.",
+    "image": "node.png",
+    "status": "ACTIVE",
+    "price": 460,
+    "progress": [
+      { "name": "Introdução", "status": "DONE" },
+      { "name": "Conceitos básicos", "status": "STARTED" },
+      { "name": "Avançado", "status": "NOT_STARTED" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "GraphQL Profissional",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis eros ut feugiat facilisis.",
+    "image": "graphql.jpg",
+    "status": "INACTIVE"
+  }
+]

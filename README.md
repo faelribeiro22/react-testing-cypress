@@ -1,1 +1,2 @@
-# refactoring-react-legacy-code
+# Refatorando código legado em projetos React
+
