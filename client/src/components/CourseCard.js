@@ -17,6 +17,9 @@ const styles = theme => ({
   media: {
     height: 140
   },
+  mediaDisabled: {
+    opacity: 0.7
+  },
   pos: {
     marginBottom: 12
   },
@@ -68,14 +71,20 @@ const MediaCard = ({
           <Button size="small" color="primary">
             Saber mais
           </Button>
-          <Button
-            size="small"
-            color="primary"
-            component={Link}
-            to={`/payment/course/${id}`}
-          >
-            Comprar
-          </Button>
+          {price ? (
+            <Button
+              size="small"
+              color="primary"
+              component={Link}
+              to={`/payment/course/${id}`}
+            >
+              Comprar
+            </Button>
+          ) : (
+            <Button size="small" color="primary">
+              Começar
+            </Button>
+          )}
         </CardActions>
       );
     }
@@ -94,7 +103,9 @@ const MediaCard = ({
     <Card className={classes.card}>
       <CardActionArea disabled={status !== "ACTIVE"}>
         <CardMedia
-          className={classes.media}
+          className={classNames(classes.media, {
+            [classes.mediaDisabled]: status !== "ACTIVE"
+          })}
           image={`/images/${image}`}
           title="Contemplative Reptile"
         />

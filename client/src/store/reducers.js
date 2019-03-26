@@ -10,7 +10,7 @@ import {
 } from "./actions";
 
 const initialState = {
-  isAuthenticated: true,
+  isAuthenticated: false,
   user: {},
   registerValidation: {},
   loginValidation: {},

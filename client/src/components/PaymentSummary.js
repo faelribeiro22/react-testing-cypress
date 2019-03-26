@@ -17,6 +17,7 @@ const styles = {
   },
   course: {
     display: "flex",
+    alignItems: "center",
     margin: "30px 0"
   },
   actions: {
@@ -24,6 +25,12 @@ const styles = {
     "& a": {
       marginLeft: 16
     }
+  },
+  flexOne: {
+    flex: 1
+  },
+  price: {
+    paddingLeft: 12
   }
 };
 
@@ -38,11 +45,14 @@ const PaymentSummary = ({ classes, course }) => (
           alt="Course"
         />
       </div>
-      <div>
+      <div className={classes.flexOne}>
         <Typography variant="h5" gutterBottom>
           {course.name}
         </Typography>
         <Typography color="textSecondary">{course.summary}</Typography>
+      </div>
+      <div className={classes.price}>
+        <Typography variant="h6">{`R$ ${course.price}`}</Typography>
       </div>
     </div>
     <div className={classes.actions}>
